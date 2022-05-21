@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #ddd;
+  min-height: 100vh;
+  header {
+    font-family: "Dancing Script", cursive;
+    color: hsl(59, 94%, 50%);
+    background-color: rgb(10, 10, 14);
+    width: 100%;
+    padding: 0.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+section {
+  width: 80vw;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  form {
+    width: 100%;
+    border: 1px solid #333;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .num-input {
+        border: 1px solid rgb(155, 154, 154);
+        height: 30px;
+        font-size: 80%;
+        outline: none;
+        border-radius: 3px;
+        padding: 0.3em;
+        background-color: #fff;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      .text-input {
+        border: 1px solid rgb(155, 154, 154);
+        width: 85%;
+        height: 30px;
+        font-size: 100%;
+        outline: none;
+        border-radius: 3px;
+        padding: 0.5em;
+      }
+    }
+
+    button {
+      margin-top: 1.5rem;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 3px;
+      border: none;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: all 0.3s linear;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        transform: scale(0.98); 
+        
+      }
+    }
+    .btn-send {
+      background-color: rgb(78, 155, 28);
+      color: #fff;
+    }
+    .btn-edit {
+      background-color: hsl(59, 96%, 40%);
+      color: #050505;
+    }
+  }
+
+  article {
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        margin-bottom: 1rem;
+        border: 1px solid rgb(194, 193, 193);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.562);
+        .rating {
+          position: absolute;
+          top: -5%;
+          left: -1%;
+          width: 20px;
+          height: 20px;
+          background-color: #17071a;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+        }
+        p {
+          padding-left: 1em;
+        }
+
+        div {
+          display: flex;
+          button {
+            margin-left: 3px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
